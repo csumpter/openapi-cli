@@ -6,7 +6,7 @@ import { performance } from 'perf_hooks';
 import * as glob from 'glob-promise';
 import { validate } from './validate';
 import { bundle } from './bundle';
-import { handleMerge } from './cli/merge-docs';
+import { handleMerge } from './cli/merge';
 import {
   dumpBundle,
   saveBundle,

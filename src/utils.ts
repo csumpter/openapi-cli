@@ -113,3 +113,7 @@ export function getExecutionTime(startedAt: number) {
     ? '<test>ms'
     : `${Math.ceil(performance.now() - startedAt)}ms`;
 }
+
+export function readYaml(filename: string) {
+  return yaml.safeLoad(fs.readFileSync(filename, 'utf-8'), { filename });
+}
